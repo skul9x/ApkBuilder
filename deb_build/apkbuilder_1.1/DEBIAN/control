@@ -1,0 +1,8 @@
+Package: apkbuilder
+Version: 1.1
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Antigravity <antigravity@gemini.ai>
+Description: Android APK Builder Pro
+ A powerful tool to build and manage Android APKs from source.

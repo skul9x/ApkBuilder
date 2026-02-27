@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ApkBuilder
+Comment=Build Android APKs with ease
+Exec=/usr/bin/apkbuilder
+Icon=apkbuilder
+Terminal=false
+Type=Application
+Categories=Development;

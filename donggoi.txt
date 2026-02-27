@@ -1,0 +1,1 @@
+pyinstaller --noconsole --onedir --clean --name="ApkBuilder v1.1" --icon="logo.ico" main.py
