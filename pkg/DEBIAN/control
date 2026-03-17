@@ -1,0 +1,8 @@
+Package: apk-builder
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Nguyễn Duy Trường <truong@apkbuilder.com>
+Description: Công cụ build, cài đặt và quản lý APK đơn giản.
+  Tự động hóa quy trình build Gradle và cài đặt ADB cho Android.

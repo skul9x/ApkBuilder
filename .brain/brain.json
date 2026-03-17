@@ -1,0 +1,46 @@
+{
+  "meta": { "schema_version": "1.1.0", "awf_version": "3.3.0" },
+  "project": { 
+    "name": "Apk Builder", 
+    "type": "Desktop Application (Wails)", 
+    "status": "In Development" 
+  },
+  "tech_stack": { 
+    "frontend": "React, TypeScript, Tailwind CSS, Vite", 
+    "backend": "Go, Wails v2", 
+    "database": "Local JSON (builder_settings.json)" 
+  },
+  "features": [
+    "Select Android Project Root Folder",
+    "Load project settings and validate build.gradle",
+    "Gradle Clean and assemble (Debug/Release)",
+    "Deep Clean (wipe build artifacts and .gradle)",
+    "Stop Gradle Daemon",
+    "Install APK via ADB to connected devices",
+    "Real-time log streaming from Gradle/ADB to UI",
+    "Smart Error Parsing (Copy Errors Only)",
+    "Auto-incrementing APK versioning",
+    "Premium Minimalist Apple-style Dark Blue UI",
+    "Open APK Folder directly from UI (Cross-platform)",
+    "UX Enhancements: Hotkeys (Ctrl+B/Esc), Toasts, Animations",
+    "Branding: Custom Footer & Go Version display"
+  ],
+  "knowledge_items": { 
+    "patterns": [
+      "Simplified Clean Architecture in Go", 
+      "Event-based log streaming via Wails EventsEmit",
+      "Minimalist Apple-style design system with Dark Blue palette"
+    ], 
+    "gotchas": [
+      "Wails requires Go 1.22+ and explicit binding generation", 
+      "Tailwind CSS in Wails/Vite needs .cjs config for ESM projects",
+      "XDG-Open is required for Linux folder opening",
+      "CSS @import must be at the very top of style.css"
+    ], 
+    "conventions": [
+      "Naming pattern: _V(x).(y).(z) or _V(x).(y)",
+      "Glassmorphism UI utility classes in style.css",
+      "Window dimensions: 1200x800 for optimal layout"
+    ] 
+  }
+}

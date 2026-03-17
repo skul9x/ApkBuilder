@@ -1,0 +1,42 @@
+{
+  "backend": {
+    "Started": "Đã bắt đầu",
+    "Done": "Hoàn tất",
+    "BUILD SUCCESS!": "BUILD THÀNH CÔNG!",
+    "BUILD FAILED!": "BUILD THẤT BẠI!",
+    "Thư mục không hợp lệ (thiếu build.gradle)": "Thư mục không hợp lệ (thiếu build.gradle)",
+    "⚠️ Không tìm thấy file APK để cài!": "⚠️ Không tìm thấy file APK để cài!",
+    "✅ Đã cài đặt xong!": "✅ Đã cài đặt xong!",
+    "Lỗi": "Lỗi"
+  },
+  "frontend": {
+    "Project Loaded": "Đã tải dự án",
+    "Failed to open folder dialog": "Lỗi mở hộp thoại chọn thư mục",
+    "Action failed": "Hành động thất bại",
+    "Launching Build": "Đang khởi chạy Build",
+    "Running Gradle Clean": "Đang quét dọn Gradle",
+    "Build cache cleared successfully!": "Đã xóa cache build thành công!",
+    "Stop signal sent to Gradle Daemon.": "Đã gửi tín hiệu dừng tới Gradle Daemon.",
+    "Executing ADB install": "Đang thực hiện cài đặt qua ADB",
+    "Copied essential errors to clipboard!": "Đã sao chép các lỗi quan trọng vào clipboard!",
+    "No critical errors detected in logs.": "Không tìm thấy lỗi quan trọng nào trong log.",
+    "Copy failed": "Sao chép thất bại",
+    "Configuration": "Cấu hình",
+    "Project Root": "Thư mục gốc dự án",
+    "No project selected...": "Chưa chọn dự án...",
+    "Change Folder": "Chọn thư mục",
+    "Artifact Name Pattern": "Mẫu tên sản phẩm (APK)",
+    "Build Options": "Tùy chọn Build",
+    "Build Variant": "Phiên bản Build",
+    "Force Refresh": "Làm mới triệt để",
+    "Clean": "Dọn dẹp",
+    "Initiate Build": "Khởi chạy Build",
+    "Install": "Cài đặt",
+    "Building...": "Đang build...",
+    "Gradle Daemon Terminal": "Cửa sổ lệnh Gradle",
+    "Copy Errors": "Sao chép lỗi",
+    "Awaiting Instructions": "Đang chờ lệnh",
+    "Next-Gen Go/Wails Edition": "Phiên bản Go/Wails thế hệ mới",
+    "Powerful automation for your Android workflow.": "Công cụ tự động hóa mạnh mẽ cho quy trình Android."
+  }
+}
