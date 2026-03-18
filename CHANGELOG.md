@@ -1,5 +1,12 @@
 # Changelog
 
+## [2026-03-18]
+### Fixed
+- **ADB Path Error:** Sửa lỗi "executable file not found in $PATH" bằng cách thêm logic quét tự động các đường dẫn Android SDK/platform-tools mặc định trên Linux và Windows.
+- **Tự động nhận diện môi trường:** Cập nhật công cụ hỗ trợ tìm kiếm Android SDK và Java Home (JDK/JRE) một cách thông minh, giúp app hoạt động ngay lập tức mà không cần thiết lập biến môi trường thủ công.
+- **Hệ thống Device Count:** Sửa lỗi không nhận diện thiết bị điện thoại do sai đường dẫn ADB.
+
+
 ## [2026-03-17]
 ### Added
 - **UI/UX Redesign:** Giao diện phong cách Apple Minimalist với tông màu Dark Blue sang trọng.

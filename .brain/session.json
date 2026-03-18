@@ -1,27 +1,26 @@
 {
-  "updated_at": "2026-03-17T18:50:00Z",
+  "updated_at": "2026-03-18T10:58:00Z",
   "working_on": {
-    "feature": "Branding & UI Optimization",
-    "task": "Polish UI/UX and add custom branding/copyright",
+    "feature": "Environment Path Optimization (ADB/SDK)",
+    "task": "Resolve 'adb not found' error and improve multi-OS support",
     "status": "completed",
-    "last_run": "2026-03-17T18:47:00Z",
+    "last_run": "2026-03-18T10:55:00Z",
     "last_run_url": "http://localhost:34115",
-    "files": ["frontend/src/App.tsx", "frontend/src/style.css", "app.go", "main.go"],
-    "notes": "Updated app to 'Apk Builder', added copyright for Nguyễn Duy Trường, fixed build button padding, and increased window size."
+    "files": ["internal/utils/env.go", "CHANGELOG.md"],
+    "notes": "Implemented intelligent environment scanning for Android SDK and Java on both Linux and Windows. Added exec.LookPath fallback for adb."
   },
   "pending_tasks": [
     { "task": "Add support for multiple connected devices selection for Install", "priority": "medium" },
     { "task": "Implement build history or recent projects list", "priority": "medium" },
-    { "task": "Add more robust error parsing for various Gradle plugins", "priority": "low" }
+    { "task": "Integrate auto-detection logic into project startup check", "priority": "low" }
   ],
   "recent_changes": [
-    { "type": "branding", "description": "Changed App Title to 'Apk Builder' and added copyright footer" },
-    { "type": "ui", "description": "Adjusted Build button width and padding for better balance" },
-    { "type": "ui", "description": "Expanded default window size to 1200x800" },
-    { "type": "backend", "description": "Added GetGoVersion binding for runtime info display" }
+    { "type": "bugfix", "description": "Resolved 'adb not found' error in Linux environment" },
+    { "type": "backend", "description": "Added multi-path scanning for Android SDK/Java Home on Windows and Linux" },
+    { "type": "backend", "description": "Implemented exec.LookPath fallback for system-wide ADB detection" }
   ],
   "decisions_made": [
-    { "decision": "Window Size 1200x800", "reason": "Better fit for the new action bar and console layout" },
-    { "decision": "Footer branding", "reason": "User personalization and professional aesthetic" }
+    { "decision": "Multi-path scanning", "reason": "Linux GUI apps often don't inherit terminal environment variables" },
+    { "decision": "exec.LookPath fallback", "reason": "Support users who install adb via package managers outside of SDK" }
   ]
 }

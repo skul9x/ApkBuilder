@@ -15,3 +15,7 @@
 [18:46] BRANDING UPDATE: Changed title to 'Apk Builder', added footer copyright for 'Nguyễn Duy Trường', and displayed Go version.
 [18:48] RUN SUCCESS: App restarted after branding updates at http://localhost:34115
 [18:49] SESSION SAVED: Brain, Session, Changelog, and API Docs updated. Branding finalized.
+[18:56] RELEASE COMPLETE: Project analyzed, README created, Windows & Linux builds generated, Force Pushed to GitHub, and Release v1.0.0 created with all assets.
+[10:58] BUGFIX: Resolved 'adb not found' on Linux/Windows by implementing intelligent path scanning in internal/utils/env.go.
+[10:59] RESTART: App is running in development mode (hot reloading) at http://localhost:34115
+[11:00] SESSION SAVED: Memory updated with SDK path handling patterns and fallback logic.

@@ -5,12 +5,14 @@
 ## 🌟 Tính năng chính
 
 - 📂 **Lựa chọn dự án thông minh:** Dễ dàng chọn thư mục dự án Android và tự động nhận diện cấu hình.
+- ⚙️ **Tự động nhận diện môi trường:** Tự động quét và tìm kiếm Android SDK (ADB) và Java Home trên cả Linux và Windows ở các vị trí mặc định phổ biến.
 - 🛠️ **Build Gradle linh hoạt:** Hỗ trợ Clean, Assemble Debug và Assemble Release chỉ với một cú click.
 - 📲 **Cài đặt ADB:** Tự động phát hiện các thiết bị Android đang kết nối và cài đặt APK trực tiếp sau khi build.
 - 🔥 **Deep Clean:** Xóa sạch cache `.gradle` và các artifact cũ để khắc phục các lỗi build khó chịu.
 - 📁 **Mở thư mục APK:** Truy cập nhanh vào thư mục chứa sản phẩm sau khi build thành công.
 - 📈 **Log thời gian thực:** Theo dõi tiến độ build và lỗi trực tiếp trên giao diện với màu sắc trực quan.
 - 📋 **Lọc lỗi thông minh:** Tự động tìm kiếm và sao chép các lỗi quan trọng từ log dài để tiện tra cứu.
+- 🧠 **Cấu trúc Brain (AI):** Tích hợp thư mục `.brain` lưu trữ tri thức và trạng thái làm việc cho các mô hình AI Agent hỗ trợ code.
 - ⌨️ **Phím tắt nâng cao:** Ctrl+B (Build), Esc (Dừng) giúp tăng tốc quy trình làm việc.
 - 🎨 **Giao diện Premium:** Thiết kế Dark Blue phong cách Apple với hiệu ứng Glassmorphism.
 

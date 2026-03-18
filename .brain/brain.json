@@ -35,12 +35,15 @@
       "Wails requires Go 1.22+ and explicit binding generation", 
       "Tailwind CSS in Wails/Vite needs .cjs config for ESM projects",
       "XDG-Open is required for Linux folder opening",
-      "CSS @import must be at the very top of style.css"
+      "CSS @import must be at the very top of style.css",
+      "ADB and SDK paths on Linux are not always inherited by GUI apps; required manual scanning of common paths (~/Android/Sdk, /usr/lib/android-sdk, etc.)",
+      "exec.LookPath is used as a fallback for 'adb' system-wide availability"
     ], 
     "conventions": [
       "Naming pattern: _V(x).(y).(z) or _V(x).(y)",
       "Glassmorphism UI utility classes in style.css",
-      "Window dimensions: 1200x800 for optimal layout"
+      "Window dimensions: 1200x800 for optimal layout",
+      "Environment Detection: Always check ANDROID_HOME environment variable and multiple OS-specific default paths"
     ] 
   }
 }
