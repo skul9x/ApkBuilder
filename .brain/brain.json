@@ -1,0 +1,69 @@
+{
+  "meta": { "schema_version": "1.1.0", "awf_version": "3.3.0" },
+  "project": { 
+    "name": "Apk Builder", 
+    "type": "Desktop Application (Wails)", 
+    "status": "In Development (Logcat Integrated)" 
+  },
+  "api_endpoints": [
+    { "path": "GetLogcatDevices", "explained": "Lấy danh sách máy Android đang kết nối" },
+    { "path": "StartLogcat(deviceID)", "explained": "Bắt đầu stream log từ ADB cho device cụ thể" },
+    { "path": "StopLogcat", "explained": "Dừng tiến trình ADB logcat đang chạy" },
+    { "path": "ExportLogcat(logs)", "explained": "Hiển thị Save Dialog và lưu log ra file .txt" }
+  ],
+  "tech_stack": { 
+    "frontend": "React, TypeScript, Tailwind CSS, Vite", 
+    "backend": "Go, Wails v2", 
+    "database": "Local JSON (builder_settings.json)" 
+  },
+  "features": [
+    "Select Android Project Root Folder",
+    "Load project settings and validate build.gradle",
+    "Gradle Clean and assemble (Debug/Release)",
+    "Deep Clean (wipe build artifacts and .gradle)",
+    "Stop Gradle Daemon",
+    "Install APK via ADB to connected devices",
+    "Real-time log streaming from Gradle/ADB to UI",
+    "Smart Error Parsing (Copy Errors Only)",
+    "Auto-incrementing APK versioning",
+    "Premium Minimalist Apple-style Dark Blue UI",
+    "Open APK Folder directly from UI (Cross-platform)",
+    "UX Enhancements: Hotkeys (Ctrl+B/Esc), Toasts, Animations",
+    "Branding: Custom Footer & Go Version display",
+    "Real-time Android Logcat Viewer (In-app)",
+    "Logcat Filter by Level (V, D, I, W, E, F)",
+    "Logcat Search by Tag/Message/Full-text",
+    "Virtual Scrolling (react-window) for high-performance log display",
+    "Logcat Stream Control (Play/Pause/Clear)"
+  ],
+    "knowledge_items": { 
+    "patterns": [
+      "Simplified Clean Architecture in Go", 
+      "Event-based log streaming via Wails EventsEmit",
+      "Minimalist Apple-style design system with Dark Blue palette",
+      "Regex-based pattern matching for 'adb logcat -v threadtime' output",
+      "UI virtualization for high-frequency data updates (Logcat)",
+      "Auto-scroll override pattern: Pause auto-scroll when user scrolls upward"
+    ], 
+    "gotchas": [
+      "Wails requires Go 1.22+ and explicit binding generation", 
+      "Tailwind CSS in Wails/Vite needs .cjs config for ESM projects",
+      "XDG-Open is required for Linux folder opening",
+      "CSS @import must be at the very top of style.css",
+      "ADB and SDK paths on Linux are not always inherited by GUI apps; required manual scanning of common paths (~/Android/Sdk, /usr/lib/android-sdk, etc.)",
+      "exec.LookPath is used as a fallback for 'adb' system-wide availability",
+      "Wails bindings (wailsjs/) are not version-controlled; frontend imports need // @ts-ignore before build",
+      "Logcat scrolling: react-window requires FixedSizeList for extreme performance with >10k lines",
+      "JS Memory management: Logcat buffer capped at 50k lines locally to prevent V8 heap crashes",
+      "react-window ESM compatibility: Downgrade to v1 if v2 causes build errors in Vite/Wails",
+      "Browser default combobox styling: Use explicit bg-white text-black for highest contrast in dark themes"
+    ], 
+    "conventions": [
+      "Naming pattern: _V(x).(y).(z) or _V(x).(y)",
+      "Glassmorphism UI utility classes in style.css",
+      "Window dimensions: 1200x800 for optimal layout",
+      "Environment Detection: Always check ANDROID_HOME environment variable and multiple OS-specific default paths",
+      "Fixed row height (24px) for virtualized log lists to ensure perfect grid alignment"
+    ] 
+  }
+}

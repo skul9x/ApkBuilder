@@ -1,0 +1,28 @@
+[15:00] Bắt đầu cloning project từ Python sang Go/Wails.
+[15:15] Khởi tạo cấu trúc dự án Go Clean Architecture.
+[15:30] Xây dựng UI cơ bản bằng React + Tailwind CSS.
+[15:45] Fix lỗi cấu hình Tailwind CSS (chuyển sang .cjs).
+[16:00] Triển khai logic nạp dự án và xử lý Gradle.
+[16:20] Thêm tính năng Deep Clean, Dừng Gradle và Cài đặt APK.
+[16:40] Thực hiện Việt hóa 100% giao diện và thông báo lỗi.
+[16:50] Kiểm tra nhanh giao diện (QA).
+[16:52] Kết thúc session và lưu Brain. ✅
+[18:09] RUN SUCCESS: App running at http://localhost:34115
+[18:15] UI/UX IMPROVED: Fixed Build button padding, removed settings sliders, enhanced action bar aesthetics.
+[18:15] RUN VERIFIED: Fixed CSS import order. App is healthy at http://localhost:34115
+[18:29] RUN SUCCESS: App restarted at http://localhost:34115
+[18:31] UI UPDATE: Increased application window dimensions to 1200x800.
+[18:46] BRANDING UPDATE: Changed title to 'Apk Builder', added footer copyright for 'Nguyễn Duy Trường', and displayed Go version.
+[18:48] RUN SUCCESS: App restarted after branding updates at http://localhost:34115
+[18:49] SESSION SAVED: Brain, Session, Changelog, and API Docs updated. Branding finalized.
+[18:56] RELEASE COMPLETE: Project analyzed, README created, Windows & Linux builds generated, Force Pushed to GitHub, and Release v1.0.0 created with all assets.
+[10:58] BUGFIX: Resolved 'adb not found' on Linux/Windows by implementing intelligent path scanning in internal/utils/env.go.
+[10:59] RESTART: App is running in development mode (hot reloading) at http://localhost:34115
+[11:00] SESSION SAVED: Memory updated with SDK path handling patterns and fallback logic.
+[09:10] DONE phase-02: Backend Parser
+[09:10] DONE phase-03: Frontend Component
+[09:15] DECISION: Used react-window for Logcat performance
+[09:16] TASK: Integrated Sidebar Switcher
+[09:16] START phase-04-integration
+[09:18] DONE task: Integration & Validation
+[09:20] END phase-04-integration ✅

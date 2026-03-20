@@ -1,0 +1,25 @@
+{
+  "updated_at": "2026-03-20T09:30:00Z",
+  "working_on": {
+    "feature": "Logcat Viewer Integration",
+    "phase": "04-integration",
+    "task": "Integration & Test",
+    "status": "completed",
+    "files": ["frontend/src/components/LogcatViewer/LogcatViewer.tsx", "app.go", "internal/adb/manager.go"],
+    "notes": "Feature finalized. All integration tasks complete. Performance verified with 50k lines. UI fixes for readability and overlapping applied."
+  },
+  "pending_tasks": [
+    { "task": "Implement build history or recent projects list", "priority": "medium" }
+  ],
+  "recent_changes": [
+    { "type": "feature", "description": "Implemented list auto-scrolling with user override detection" },
+    { "type": "feature", "description": "Added ExportLogcat logic using Wails SaveFileDialog" },
+    { "type": "ui", "description": "Fixed log entry overlapping by enforcing single-line ellipsis (title tooltip)" },
+    { "type": "ui", "description": "Enhanced combobox contrast with black text on white background" }
+  ],
+  "decisions_made": [
+    { "decision": "react-window v1 downgrade", "reason": "Ensure ESM compatibility in Wails environment" },
+    { "decision": "Single-line log display", "reason": "Prevent O(N) layout shift in virtualized lists" },
+    { "decision": "User scroll detection", "reason": "Pause auto-scroll to improve readability during active debugging" }
+  ]
+}

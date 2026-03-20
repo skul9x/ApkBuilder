@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Apk Builder
+Comment=Build and install Android APKs easily
+Exec=/usr/bin/apk-builder
+Icon=apk-builder
+Terminal=false
+Type=Application
+Categories=Development;
+Keywords=android;apk;builder;adb;gradle;
