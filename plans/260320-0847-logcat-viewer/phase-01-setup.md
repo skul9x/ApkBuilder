@@ -1,5 +1,5 @@
 # Phase 01: Setup & ADB Engine
-Status: ⬜ Pending
+Status: ✅ Completed
 
 ## Objective
 Khởi tạo cấu trúc Backend Go cơ bản để giao tiếp với `adb` (Android Debug Bridge), lấy danh sách thiết bị và thiết lập kết nối streaming.

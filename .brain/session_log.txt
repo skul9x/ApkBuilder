@@ -26,3 +26,5 @@
 [09:16] START phase-04-integration
 [09:18] DONE task: Integration & Validation
 [09:20] END phase-04-integration ✅
+[11:20] FIXED: Standardized deb metadata (no accents) and built v1.0.5.
+[11:21] TEST BUILD: Created apk-builder_test_123.deb with description '123 - Test'.

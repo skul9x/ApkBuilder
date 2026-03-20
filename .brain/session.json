@@ -1,25 +1,21 @@
 {
-  "updated_at": "2026-03-20T09:30:00Z",
+  "updated_at": "2026-03-20T11:20:00Z",
   "working_on": {
-    "feature": "Logcat Viewer Integration",
-    "phase": "04-integration",
-    "task": "Integration & Test",
+    "feature": "Packaging & CI/CD",
+    "phase": "Release Polish",
+    "task": "Fix Debian Metadata encoding",
     "status": "completed",
-    "files": ["frontend/src/components/LogcatViewer/LogcatViewer.tsx", "app.go", "internal/adb/manager.go"],
-    "notes": "Feature finalized. All integration tasks complete. Performance verified with 50k lines. UI fixes for readability and overlapping applied."
+    "files": ["pkg/DEBIAN/control"],
+    "notes": "Standardized metadata (Maintainer/Description) to plain ASCII to prevent '?' garbled text in Ubuntu App Center. Built v1.0.5."
   },
   "pending_tasks": [
     { "task": "Implement build history or recent projects list", "priority": "medium" }
   ],
   "recent_changes": [
-    { "type": "feature", "description": "Implemented list auto-scrolling with user override detection" },
-    { "type": "feature", "description": "Added ExportLogcat logic using Wails SaveFileDialog" },
-    { "type": "ui", "description": "Fixed log entry overlapping by enforcing single-line ellipsis (title tooltip)" },
-    { "type": "ui", "description": "Enhanced combobox contrast with black text on white background" }
+    { "type": "packaging", "description": "Fixed deb metadata encoding for Linux App Center compatibility" },
+    { "type": "versioning", "description": "Released v1.0.5 with Logcat Viewer and bugfixes" }
   ],
   "decisions_made": [
-    { "decision": "react-window v1 downgrade", "reason": "Ensure ESM compatibility in Wails environment" },
-    { "decision": "Single-line log display", "reason": "Prevent O(N) layout shift in virtualized lists" },
-    { "decision": "User scroll detection", "reason": "Pause auto-scroll to improve readability during active debugging" }
+    { "decision": "Plain ASCII for control files", "reason": "Universal compatibility across Linux installers (Ubuntu Software Center avoids UTF-8 bugs in meta)" }
   ]
 }

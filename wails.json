@@ -7,7 +7,7 @@
   "frontend:dev:watcher": "npm run dev",
   "frontend:dev:serverUrl": "auto",
   "author": {
-    "name": "Antigravity AI",
-    "email": "antigravity@ai.com"
+    "name": "Nguyễn Duy Trường",
+    "email": "skul9x@gmail.com"
   }
 }
